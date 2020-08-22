@@ -1,0 +1,323 @@
+.project {
+  height: 500px;
+}
+#trigger-1 {
+  background: #12c2e9; /* fallback for old browsers */
+  background: #12c2e9; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to left,
+    #f64f59,
+    #c471ed,
+    #12c2e9
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #f64f59, #c471ed, #12c2e9);
+  margin: 0;
+  padding: 0; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  overflow: hidden;
+}
+
+#trigger-1 h1 {
+  color: white;
+  text-transform: uppercase;
+  padding-top: 5%;
+  padding: 50px;
+}
+
+.project1 {
+  /* border-radius: 5%; */
+  background: url("../image/3392211-min.jpg") no-repeat 20% 80%;
+  background-size: cover;
+  padding: 0;
+  margin: 0;
+}
+.project1::after {
+  content: "Media Sosial";
+  font-family: "Montserrat";
+  font-size: 36px;
+  text-transform: uppercase;
+
+  position: relative;
+  color: white;
+  display: block;
+  top: 8%;
+  left: -60%;
+  right: 0;
+  bottom: 0;
+}
+.content-text1 {
+  color: white;
+  position: absolute;
+  font-size: large;
+  width: 50%;
+  margin-top: 10%;
+  left: 7%;
+  font-weight: 200;
+  text-align: right;
+}
+.project2 {
+  background: url("../image/18695-min.jpg") no-repeat 50% 50%;
+  background-size: cover;
+  padding: 0;
+  margin: 0;
+}
+
+.project2::after {
+  content: "Buat Semenarik Mungkin";
+  font-family: "Montserrat";
+  font-size: 36px;
+  position: relative;
+  color: #fff;
+  display: block;
+  top: 10%;
+  left: 90%;
+  right: 0;
+  bottom: 0;
+}
+.content-text2 {
+  color: white;
+  position: relative;
+  width: 80%;
+  font-size: large;
+  margin-top: 25%;
+  font-weight: 200;
+}
+
+.project3 {
+  background: url(../image/517072-PIXH8C-541-min.jpg) no-repeat 20% 80%;
+  background-size: cover;
+  padding: 0;
+  margin: 0;
+}
+
+.project3::after {
+  content: "Jangkau Lebih Banyak";
+  font-family: "Montserrat";
+  font-size: 36px;
+  position: relative;
+  color: #fff;
+  display: block;
+  top: 72%;
+  left: -60%;
+  right: 0;
+  bottom: 10%;
+  text-transform: uppercase;
+}
+.content-text3 {
+  color: white;
+  position: absolute;
+  font-size: large;
+  width: 50%;
+  margin-top: 5%;
+  left: 7%;
+  font-weight: 200;
+  text-align: right;
+}
+
+@media (min-width: 300px) {
+  #trigger-1 h1 {
+    font-size: x-large;
+  }
+  .project {
+    height: 300px;
+  }
+  .content-text1 {
+    font-size: 0.7em;
+    margin-top: 0%;
+    width: 50%;
+  }
+  .project1::after {
+    font-size: medium;
+    top: -15%;
+  }
+  .content-text2 {
+    font-size: 0.7em;
+    margin-top: 0%;
+    width: 100%;
+  }
+  .project2::after {
+    font-size: medium;
+    top: -15%;
+    left: 35%;
+  }
+
+  .content-text3 {
+    font-size: 0.7em;
+    margin-top: 5%;
+    width: 50%;
+  }
+  .project3::after {
+    font-size: medium;
+    top: -20%;
+  }
+}
+
+@media (min-width: 568px) {
+  #trigger-1 h1 {
+    font-size: 40px;
+  }
+  .project {
+    height: 300px;
+  }
+  .content-text1 {
+    font-size: 0.9em;
+    margin-top: 0%;
+    width: 57%;
+    left: 0%;
+  }
+  .project1::after {
+    font-size: 25px;
+    top: -15%;
+  }
+  .content-text2 {
+    font-size: 0.9em;
+    margin-top: 0%;
+    width: 100%;
+  }
+  .project2::after {
+    font-size: 25px;
+    top: -25%;
+    left: 35%;
+  }
+
+  .content-text3 {
+    font-size: 0.9em;
+    margin-top: 0;
+    width: 50%;
+  }
+  .project3::after {
+    font-size: 25px;
+    top: -25%;
+  }
+}
+
+@media (min-width: 768px) {
+  #trigger-1 h1 {
+    font-size: 50px;
+  }
+  .project {
+    height: 500px;
+  }
+  .content-text1 {
+    font-size: 1.4em;
+    margin-top: 7%;
+    width: 57%;
+    left: 0%;
+  }
+  .project1::after {
+    font-size: 35px;
+    top: 0%;
+  }
+  .content-text2 {
+    font-size: 1.4em;
+    margin-top: 7%;
+    width: 100%;
+  }
+  .project2::after {
+    font-size: 35px;
+    top: -20%;
+    left: 20%;
+  }
+
+  .content-text3 {
+    font-size: 1.4em;
+    margin-top: 0;
+    width: 50%;
+  }
+  .project3::after {
+    font-size: 35px;
+    top: -20%;
+    left: -5%;
+  }
+}
+
+@media (min-width: 992px) {
+  #trigger-1 h1 {
+    font-size: 70px;
+  }
+  .project {
+    height: 500px;
+  }
+  .content-text1 {
+    font-size: 1.4em;
+    margin-top: 10%;
+    width: 57%;
+    left: 0%;
+  }
+  .project1::after {
+    font-size: 45px;
+    text-transform: uppercase;
+    top: 0%;
+  }
+  .content-text2 {
+    font-size: 1.4em;
+    margin-top: 7%;
+    width: 100%;
+  }
+  .project2::after {
+    font-size: 45px;
+    top: -20%;
+    left: 10%;
+    text-transform: uppercase;
+  }
+
+  .content-text3 {
+    font-size: 1.4em;
+    margin-top: 7%;
+    width: 50%;
+  }
+  .project3::after {
+    font-size: 45px;
+    top: -25%;
+    left: -60%;
+  }
+}
+
+#scroll-1 {
+  position: absolute;
+  left: 50%;
+  display: block;
+  text-align: center;
+  font-size: 50px;
+  z-index: 0;
+  text-decoration: none;
+  text-shadow: 0;
+  width: 20px;
+  height: 20px;
+  border-bottom: 2px solid #fff;
+  border-right: 2px solid #fff;
+  -webkit-transform: translate(-50%, 0) rotate(45deg);
+  transform: translate(-50%, 0) rotate(45deg);
+  animation: fade_move_down 3s cubic-bezier(0.19, 1, 0.22, 1) infinite;
+}
+#scroll-2 {
+  position: absolute;
+  left: 50%;
+  display: block;
+  text-align: center;
+  font-size: 50px;
+  z-index: 0;
+  text-decoration: none;
+  text-shadow: 0;
+  width: 20px;
+  height: 20px;
+  border-bottom: 2px solid #fff;
+  border-right: 2px solid #fff;
+  -webkit-transform: translate(-50%, 0) rotate(45deg);
+  transform: translate(-50%, 0) rotate(45deg);
+  animation: fade_move_down 3s cubic-bezier(0.19, 1, 0.22, 1) infinite;
+}
+
+/*
+@keyframes fade_move_down {
+  0% {
+    transform: translate(0, -20px) rotate(45deg);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: translate(0, 20px) rotate(45deg);
+    opacity: 0;
+  }
+} */

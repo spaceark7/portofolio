@@ -1,0 +1,460 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0%;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+.project-header {
+  overflow: hidden;
+  align-items: center;
+  width: 100%;
+  height: 300px;
+  /* text-align: center;
+  justify-items: center; */
+  margin: 0;
+}
+.project-header .project-title {
+  margin: 0;
+  position: relative;
+  top: 20%;
+  left: 5%;
+  text-transform: uppercase;
+  font-size: 35px;
+  text-transform: uppercase;
+
+  background: rgb(22, 8, 252);
+  background: linear-gradient(
+    90deg,
+    rgba(22, 8, 252, 1) 0%,
+    rgba(241, 19, 255, 1) 35%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  vertical-align: middle;
+}
+.project-description {
+  position: relative;
+  top: 25%;
+  left: 5%;
+  width: 50%;
+  font-weight: 100;
+  color: black;
+  margin: 0;
+}
+
+section {
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+}
+section .slide {
+  position: relative;
+  background: whitesmoke;
+  height: 100%;
+  flex: 1;
+
+  overflow: hidden;
+  transition: 0.5s ease-in-out;
+}
+section .slide:last-child {
+  border-right: none;
+}
+section .slide:hover {
+  flex-grow: 5;
+}
+section .slide:nth-child(1) {
+  background: url("../image/food-min.jpg");
+  background-size: contain;
+}
+section .slide:nth-child(2) {
+  background: url("../image/fashion-min.jpg");
+  background-size: contain;
+}
+section .slide:nth-child(3) {
+  background: url("../image/edit-min.jpg") 50% 50%;
+  background-size: cover;
+}
+section .slide:nth-child(4) {
+  background: url("../image/video-min.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+section .slide:nth-child(5) {
+  background: url("../image/fb.jpg") 50% 50%;
+  background-size: cover;
+}
+section .slide .content {
+  position: absolute;
+  bottom: 0;
+  margin: 40px;
+  padding: 30px;
+  background: #000;
+  color: #000;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0s;
+  transform: translateY(100px);
+}
+section .slide:hover .content {
+  visibility: visible;
+  transition: 0.7s;
+  transition-delay: 0.5s;
+  transform: translateY(0);
+  opacity: 0.9;
+}
+.content-text {
+  font-size: 85%;
+  color: white;
+  opacity: 1;
+}
+
+.title-text {
+  color: white;
+}
+
+.project-CTA {
+  position: relative;
+  top: 100vh;
+  overflow: hidden;
+  align-items: center;
+  width: 100%;
+  height: 350px;
+  /* text-align: center;
+  justify-items: center; */
+  margin: 0;
+}
+.project-CTA-header {
+  margin: 0;
+  position: relative;
+  top: 20%;
+  left: 5%;
+  text-transform: uppercase;
+  font-size: 35px;
+  text-transform: uppercase;
+
+  background: rgb(22, 8, 252);
+  background: linear-gradient(
+    90deg,
+    rgba(22, 8, 252, 1) 0%,
+    rgba(241, 19, 255, 1) 35%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  vertical-align: middle;
+}
+.project-CTA-description {
+  position: relative;
+  top: 25%;
+  left: 5%;
+  width: 50%;
+  font-weight: 100;
+  color: black;
+  margin: 0;
+}
+.project-CTA-button {
+  position: relative;
+  top: 35%;
+  left: 50%;
+}
+.project-CTA-button button {
+  transform: translate(-50%, -50%);
+}
+.project-CTA-button button {
+  background: none;
+  width: 200px;
+  height: 50px;
+  color: rgba(0, 212, 255, 1);
+  border: 1px solid rgba(0, 212, 255, 1);
+  border-radius: 10px;
+  font-size: 20px;
+  transition: 0.5s;
+  overflow: hidden;
+}
+
+.project-CTA-button button:focus {
+  outline: none;
+}
+
+.project-CTA-button button::before {
+  content: "Gabung";
+  display: block;
+  position: absolute;
+  background: rgba(22, 8, 252, 0.1);
+  width: 60px;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.5s;
+  filter: blur(30px);
+  transform: translate(-130px) skewX(15deg);
+}
+.project-CTA-button button::after {
+  content: "Gabung";
+  display: block;
+  position: absolute;
+  background: rgba(22, 8, 252, 0.2);
+  width: 30px;
+  height: 100%;
+  top: 0;
+  left: 30px;
+  opacity: 0;
+  filter: blur(30px);
+  transform: translate(-100px) skewX(10deg);
+}
+.project-CTA-button button:hover {
+  border-color: rgba(22, 8, 252, 1);
+  background: rgb(22, 8, 252);
+  background: linear-gradient(
+    90deg,
+    rgba(22, 8, 252, 1) 0%,
+    rgba(241, 19, 255, 1) 35%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  cursor: pointer;
+  color: white;
+}
+.project-CTA-button button:hover:before {
+  transform: translate(300px) skewX(-15deg);
+  opacity: 0.6;
+  transition: 0.7s;
+  color: white;
+}
+.project-CTA-button button:hover:after {
+  transform: translate(300px) skewX(-15deg);
+  opacity: 1;
+  transition: 0.7s;
+  color: white;
+}
+
+@media (min-width: 300px) {
+  .content-text {
+    font-size: 12px;
+    color: white;
+    margin: 0;
+  }
+  section .slide:hover {
+    flex-grow: 5;
+  }
+  .title-text {
+    font-size: medium;
+  }
+  section .slide .content {
+    margin: 0;
+    padding: 20px;
+    height: fit-content;
+  }
+  section .slide:nth-child(1) {
+    background-size: cover;
+    background-position: 60% 40%;
+  }
+  section .slide:nth-child(2) {
+    background-size: cover;
+    background-position: 60% 40%;
+  }
+  section .slide:nth-child(3) {
+    background-size: cover;
+  }
+  section .slide:nth-child(4) {
+    background-size: contain;
+    background-repeat: repeat-y;
+  }
+  section .slide:nth-child(5) {
+    background-size: cover;
+  }
+  .project-header {
+    height: 70%;
+    padding: 20px;
+  }
+  .project-header .project-title {
+    font-size: 20px;
+  }
+  .project-description {
+    font-size: small;
+    width: 80%;
+  }
+  section::after {
+    content: "Tap untuk melihat";
+    position: absolute;
+    color: white;
+    font-size: x-small;
+    display: inline-block;
+    text-decoration: underline;
+    left: 80%;
+    top: 0;
+    z-index: 2;
+    font-size: 15px;
+    animation: fade_move_down2 3s infinite;
+  }
+
+  .project-CTA {
+    height: 400px;
+    padding: 10px;
+  }
+  .project-CTA-header {
+    font-size: 20px;
+    width: 80%;
+    text-align: center;
+  }
+  .project-CTA-description {
+    font-size: small;
+    width: 80%;
+    text-align: center;
+  }
+  .project-CTA-button {
+    top: 40%;
+  }
+
+  .project-CTA-button button {
+    height: 40px;
+    width: 150px;
+    font-size: 12px;
+  }
+}
+
+@media (min-width: 568px) {
+  section::after {
+    font-size: 20px;
+  }
+
+  .project-header {
+    height: 80%;
+    padding: 20px;
+  }
+  .project-header .project-title {
+    font-size: 25px;
+  }
+  .project-description {
+    font-size: medium;
+    width: 80%;
+  }
+
+  section .slide .content .title-text {
+    font-size: 35px;
+  }
+  section .slide .content p {
+    font-size: 20px;
+  }
+  section .slide:nth-child(4) {
+    background-size: cover;
+  }
+
+  .project-CTA {
+    height: 400px;
+    padding: 10px;
+  }
+  .project-CTA-header {
+    font-size: 30px;
+    width: 80%;
+    text-align: center;
+  }
+  .project-CTA-description {
+    font-size: medium;
+    width: 80%;
+    text-align: center;
+  }
+  .project-CTA-button {
+    top: 40%;
+  }
+
+  .project-CTA-button button {
+    height: 40px;
+    width: 280px;
+    font-size: 15px;
+  }
+}
+
+/* @media (min-width: 568px) {
+  section::after {
+    font-size: 20px;
+  }
+
+  .project-header {
+    height: 80%;
+    padding: 20px;
+  }
+  .project-header .project-title {
+    font-size: 25px;
+  }
+  .project-description {
+    font-size: medium;
+    width: 80%;
+  }
+
+  section .slide .content .title-text {
+    font-size: 20px;
+  }
+  section .slide .content p {
+    font-size: 12px;
+  }
+  section .slide:nth-child(4) {
+    background-size: cover;
+  }
+} */
+
+@media (min-width: 768px) {
+  section::after {
+    display: none;
+  }
+  .project-header {
+    height: 250px;
+    padding: 20px;
+  }
+  .project-header .project-title {
+    font-size: 35px;
+  }
+  .project-description {
+    font-size: medium;
+    width: 80%;
+  }
+  section .slide .content p {
+    font-size: 16px;
+  }
+  .project-CTA {
+    height: 400px;
+    padding: 10px;
+  }
+  .project-CTA-header {
+    font-size: 35px;
+    width: 80%;
+    text-align: center;
+  }
+  .project-CTA-description {
+    font-size: medium;
+    width: 80%;
+    text-align: center;
+  }
+  .project-CTA-button {
+    top: 40%;
+  }
+
+  .project-CTA-button button {
+    height: 40px;
+    width: 250px;
+    font-size: 20px;
+  }
+}
+
+@keyframes fade_move_down2 {
+  0% {
+    transform: translate(0, -20px);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: translate(0, 20px);
+    opacity: 0;
+  }
+}
