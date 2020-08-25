@@ -98,6 +98,10 @@
   animation-duration: 1.3s;
   color: #000;
 }
+
+.animate__fadeInUp {
+  animation-name: fadeInUp !important;
+}
 /* @media (min-width: 360px) {
   .line {
     font-size: 43px;
