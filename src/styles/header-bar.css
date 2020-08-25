@@ -50,7 +50,7 @@
   background-clip: text;
   -webkit-text-fill-color: transparent;
 
-  /* referring directly to the animation's @keyframe declaration */
+  animation-name: bounceInLeft !important;
   animation-duration: 2s;
 }
 
@@ -79,7 +79,7 @@
   bottom: 10px;
   z-index: -1;
   width: 480px;
-
+  animation-name: backInUp !important;
   animation-duration: 1.2s;
 }
 
@@ -94,8 +94,8 @@
   left: 10%;
   bottom: 20%;
   z-index: -1;
-  animation: fade;
-  animation-duration: 3s;
+  animation-name: fadeInUp !important;
+  animation-duration: 1.3s;
   color: #000;
 }
 /* @media (min-width: 360px) {
