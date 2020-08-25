@@ -8,6 +8,9 @@
   margin: 0;
   padding: 0;
 }
+.header {
+  align-items: center;
+}
 
 .hero {
   height: 100vh;
@@ -113,6 +116,7 @@
 @media (min-width: 300px) {
   .line {
     font-size: 30px;
+    padding: 20px;
   }
   .subtitle-box {
     left: 20px;
