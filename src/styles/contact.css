@@ -157,4 +157,11 @@
     align-items: flex-start;
     width: 100%;
   }
+  .inputBox input::placeholder,
+  textarea::placeholder {
+    font-size: 12px;
+    color: cornflowerblue;
+    resize: vertical;
+    opacity: 0.5;
+  }
 }

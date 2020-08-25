@@ -115,14 +115,14 @@
 
 @media (min-width: 300px) {
   .line {
-    font-size: 30px;
+    font-size: 25px;
     padding-left: 20px;
   }
   .subtitle-box {
     left: 20px;
     font-size: x-small;
     max-width: 90%;
-    bottom: 200px;
+    bottom: 250px;
   }
   .header-subtitle {
     font-size: small;
@@ -134,7 +134,7 @@
     animation-duration: 3s;
   }
   .header {
-    margin-bottom: 200px;
+    margin-bottom: 300px;
   }
 }
 @media (min-width: 568px) {
