@@ -1,9 +1,9 @@
 * {
-  box-sizing: border-box;
-  font-family: "Montserrat", sans-serif;
 }
 
 .wrapper {
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
   overflow: hidden;
   position: relative;
   top: 100vh;
@@ -81,4 +81,15 @@
 .member-contact span a:hover svg {
   color: #000000;
   transform: scale(1.5);
+}
+
+@media (max-width: 767px) {
+  #hasbi {
+    object-fit: cover;
+    object-position: 0 20%;
+  }
+  #emyus {
+    object-fit: cover;
+    object-position: 0 10%;
+  }
 }

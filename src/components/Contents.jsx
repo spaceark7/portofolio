@@ -6,7 +6,8 @@ import "aos/dist/aos.css";
 import "../styles/contents.css";
 import image from "../image/DI4.png";
 
-AOS.init({ duration: 2000, delay: 400 });
+AOS.init({ duration: 2000 });
+
 const Contents = () => {
   // const project1 = document.getElementsByClassName("project1");
   // project1.scrollIntoView({

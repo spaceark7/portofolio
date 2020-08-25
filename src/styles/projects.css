@@ -46,14 +46,14 @@
   margin: 0;
 }
 
-section {
+.pSection {
   overflow: hidden;
   position: absolute;
   width: 100%;
   height: 100vh;
   display: flex;
 }
-section .slide {
+.pSection .slide {
   position: relative;
   background: whitesmoke;
   height: 100%;
@@ -62,34 +62,34 @@ section .slide {
   overflow: hidden;
   transition: 0.5s ease-in-out;
 }
-section .slide:last-child {
+.pSection .slide:last-child {
   border-right: none;
 }
-section .slide:hover {
+.pSection .slide:hover {
   flex-grow: 5;
 }
-section .slide:nth-child(1) {
+.pSection .slide:nth-child(1) {
   background: url("../image/food-min.jpg");
   background-size: contain;
 }
-section .slide:nth-child(2) {
+.pSection .slide:nth-child(2) {
   background: url("../image/fashion-min.jpg");
   background-size: contain;
 }
-section .slide:nth-child(3) {
+.pSection .slide:nth-child(3) {
   background: url("../image/edit-min.jpg") 50% 50%;
   background-size: cover;
 }
-section .slide:nth-child(4) {
+.pSection .slide:nth-child(4) {
   background: url("../image/video-min.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
-section .slide:nth-child(5) {
+.pSection .slide:nth-child(5) {
   background: url("../image/fb.jpg") 50% 50%;
   background-size: cover;
 }
-section .slide .content {
+.pSection .slide .content {
   position: absolute;
   bottom: 0;
   margin: 40px;
@@ -101,7 +101,7 @@ section .slide .content {
   transition: 0s;
   transform: translateY(100px);
 }
-section .slide:hover .content {
+.pSection .slide:hover .content {
   visibility: visible;
   transition: 0.7s;
   transition-delay: 0.5s;
@@ -243,33 +243,33 @@ section .slide:hover .content {
     color: white;
     margin: 0;
   }
-  section .slide:hover {
+  .pSection .slide:hover {
     flex-grow: 5;
   }
   .title-text {
     font-size: medium;
   }
-  section .slide .content {
+  .pSection .slide .content {
     margin: 0;
     padding: 20px;
     height: fit-content;
   }
-  section .slide:nth-child(1) {
+  .pSection .slide:nth-child(1) {
     background-size: cover;
     background-position: 60% 40%;
   }
-  section .slide:nth-child(2) {
+  .pSection .slide:nth-child(2) {
     background-size: cover;
     background-position: 60% 40%;
   }
-  section .slide:nth-child(3) {
+  .pSection .slide:nth-child(3) {
     background-size: cover;
   }
-  section .slide:nth-child(4) {
+  .pSection .slide:nth-child(4) {
     background-size: contain;
     background-repeat: repeat-y;
   }
-  section .slide:nth-child(5) {
+  .pSection .slide:nth-child(5) {
     background-size: cover;
   }
   .project-header {
@@ -283,14 +283,14 @@ section .slide:hover .content {
     font-size: small;
     width: 80%;
   }
-  section::after {
+  .pSection::after {
     content: "Tap untuk melihat";
     position: absolute;
     color: white;
     font-size: x-small;
     display: inline-block;
     text-decoration: underline;
-    left: 80%;
+    left: 25%;
     top: 0;
     z-index: 2;
     font-size: 15px;
@@ -323,8 +323,22 @@ section .slide:hover .content {
 }
 
 @media (min-width: 568px) {
-  section::after {
+  .pSection::after {
     font-size: 20px;
+  }
+
+  .pSection::after {
+    content: "Tap untuk melihat";
+    position: absolute;
+    color: white;
+    font-size: x-small;
+    display: inline-block;
+    text-decoration: underline;
+    left: 25%;
+    top: 0;
+    z-index: 2;
+    font-size: 15px;
+    animation: fade_move_down2 3s infinite;
   }
 
   .project-header {
@@ -339,13 +353,13 @@ section .slide:hover .content {
     width: 80%;
   }
 
-  section .slide .content .title-text {
+  .pSection .slide .content .title-text {
     font-size: 35px;
   }
-  section .slide .content p {
+  .pSection .slide .content p {
     font-size: 20px;
   }
-  section .slide:nth-child(4) {
+  .pSection .slide:nth-child(4) {
     background-size: cover;
   }
 
@@ -403,7 +417,7 @@ section .slide:hover .content {
 } */
 
 @media (min-width: 768px) {
-  section::after {
+  .pSection::after {
     display: none;
   }
   .project-header {
@@ -417,7 +431,7 @@ section .slide:hover .content {
     font-size: medium;
     width: 80%;
   }
-  section .slide .content p {
+  .pSection .slide .content p {
     font-size: 16px;
   }
   .project-CTA {

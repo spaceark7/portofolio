@@ -61,7 +61,7 @@ const TeamMember = () => {
             className="member col-md-4"
           >
             <figure className="item-container">
-              <img className="member-img" src={hasbi} alt="" />
+              <img id="hasbi" className="member-img" src={hasbi} alt="" />
               <figcaption className="member-caption">
                 <a className="member-title" href="">
                   <h4 className="member-name">Hasbi Assidiki</h4>
@@ -98,7 +98,7 @@ const TeamMember = () => {
           >
             <figure className="item-container">
               <div>
-                <img className="member-img" src={emyus} alt="" />
+                <img id="emyus" className="member-img" src={emyus} alt="" />
                 <figcaption className="member-caption">
                   <a className="member-title" href="">
                     <h4 className="member-name">M. Yusuf Sutresna</h4>

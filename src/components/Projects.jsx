@@ -19,6 +19,7 @@ const Projects = () => {
         </p>
       </div>
       <section
+        className="pSection"
         data-aos-duration="500"
         data-aos="fade-up"
         data-aos-anchor="#trigger-content"

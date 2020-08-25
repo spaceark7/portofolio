@@ -7,6 +7,7 @@ import NavBar from "./components/Nav-bar";
 import Contents from "./components/Contents";
 import Projects from "./components/Projects";
 import TeamMember from "./components/Team-member";
+import Contact from "./components/Contact";
 function App() {
   document.title = "Go Digital | Explore Creative";
   return (
@@ -18,6 +19,7 @@ function App() {
       <Contents />
       <Projects />
       <TeamMember />
+      <Contact />
       {/* // <HeaderBar />
       // Content
       
