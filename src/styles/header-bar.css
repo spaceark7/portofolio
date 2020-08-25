@@ -1,5 +1,20 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
+
+@keyframes fade_move_down {
+  0% {
+    transform: translate(0, -20px) rotate(45deg);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: translate(0, 20px) rotate(45deg);
+    opacity: 0;
+  }
+}
+
 * {
   font-family: "Montserrat", sans-serif;
 }
@@ -35,7 +50,7 @@
   background-clip: text;
   -webkit-text-fill-color: transparent;
 
-  animation: bounce; /* referring directly to the animation's @keyframe declaration */
+  /* referring directly to the animation's @keyframe declaration */
   animation-duration: 2s;
 }
 
@@ -58,20 +73,6 @@
   animation: fade_move_down 3s cubic-bezier(0.19, 1, 0.22, 1) infinite;
 }
 
-@keyframes fade_move_down {
-  0% {
-    transform: translate(0, -20px) rotate(45deg);
-    opacity: 0;
-  }
-  50% {
-    opacity: 1;
-  }
-  100% {
-    transform: translate(0, 20px) rotate(45deg);
-    opacity: 0;
-  }
-}
-
 .header-img {
   position: absolute;
   right: 10%;
@@ -79,7 +80,6 @@
   z-index: -1;
   width: 480px;
 
-  animation: bounce;
   animation-duration: 1.2s;
 }
 
