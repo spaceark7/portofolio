@@ -2,11 +2,11 @@ import React from "react";
 import "../styles/header-bar.css";
 import "bootstrap/dist/css/bootstrap.css";
 import "./Nav-bar";
-import NavBar from "./Nav-bar";
 import "animate.css";
 import Di from "../image/DI4.png";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import "animate.css/animate.compat.css";
 
 AOS.init();
 
@@ -16,7 +16,7 @@ const HeaderBar = () => {
       <div className="hero">
         <div className="header">
           <img className="header-img animate__backInUp" src={Di} alt="" />
-          <h1 className="line animate__bounceInLeft">
+          <h1 className="line animate__animated animate__bounceInLeft">
             Bersiap untuk industri digital 4.0
           </h1>
           <div className="subtitle-box animate__fadeInUp">

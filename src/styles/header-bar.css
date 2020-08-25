@@ -33,7 +33,7 @@
   -webkit-text-fill-color: transparent;
 
   animation: bounce; /* referring directly to the animation's @keyframe declaration */
-  animation-duration: 1s;
+  animation-duration: 2s;
 }
 
 .scroll-down {
