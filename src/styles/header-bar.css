@@ -116,7 +116,7 @@
 @media (min-width: 300px) {
   .line {
     font-size: 30px;
-    padding: 20px;
+    padding-left: 20px;
   }
   .subtitle-box {
     left: 20px;
